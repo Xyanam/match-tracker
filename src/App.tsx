@@ -1,7 +1,12 @@
 import "./App.css";
+import MatchTracker from "./components/MatchTracker";
 
 function App() {
-  return <div></div>;
+  return (
+    <>
+      <MatchTracker />
+    </>
+  );
 }
 
 export default App;
