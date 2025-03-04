@@ -1,6 +1,7 @@
+import React from "react";
 import Icon, { IconName } from "./Icon";
 
-interface Props {
+interface Props extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   className?: string;
   variant?: "destructive" | "success" | "warning";
@@ -12,6 +13,7 @@ const Button = ({
   className,
   trailingIcon,
   variant = "destructive",
+  ...props
 }: Props) => {
   const baseStyles =
     "px-9 py-4 rounded-sm text-white inline-flex items-center justify-center gap-3 cursor-pointer text-lg";
@@ -23,7 +25,10 @@ const Button = ({
   };
 
   return (
-    <button className={`${baseStyles} ${className} ${variants[variant]}`}>
+    <button
+      className={`${baseStyles} ${className} ${variants[variant]}`}
+      {...props}
+    >
       {children}
       {trailingIcon && <Icon name={trailingIcon} />}
     </button>

@@ -22,3 +22,9 @@ export interface Match {
   awayScore: number;
   status: MatchStatus;
 }
+
+interface MatchesResponse {
+  data: {
+    matches: Match[];
+  };
+}

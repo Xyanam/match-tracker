@@ -1,15 +1,23 @@
-type Props = {};
+import { Match } from "@/types/types";
 
-const MatchItem = ({}: Props) => {
+interface Props {
+  match: Match;
+}
+
+const MatchItem = ({ match }: Props) => {
+  const { homeTeam, awayTeam } = match;
+
   return (
     <div className="bg-muted rounded-sm px-10 py-4">
       <div className="flex justify-between items-center">
-        <h1 className="text-base font-semibold">Command 1</h1>
-        <div className="flex flex-col gap-2">
-          <span>1:0</span>
-          <span>Live</span>
+        <h1 className="text-base font-semibold">{homeTeam.name}</h1>
+        <div className="flex flex-col gap-2 items-center">
+          <span>
+            {match.homeScore}:{match.awayScore}
+          </span>
+          <span>{match.status}</span>
         </div>
-        <h1 className="text-base font-semibold">Command 2</h1>
+        <h1 className="text-base font-semibold">{awayTeam.name}</h1>
       </div>
     </div>
   );
