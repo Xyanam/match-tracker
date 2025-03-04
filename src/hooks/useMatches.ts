@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 
 import { fetchMatches } from "@/services/matchService";
 
-import { Match, MatchesResponse } from "@/types/types";
+import { Match, MatchesResponse } from "@/types/match";
 
 export const useMatches = () => {
   return useQuery<MatchesResponse, Error, Match[]>({

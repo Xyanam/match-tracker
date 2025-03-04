@@ -1,4 +1,4 @@
-import { MatchesResponse } from "@/types/types";
+import { MatchesResponse } from "@/types/match";
 import config from "@/config/config";
 
 const baseUrl = config.API_BASE_URL;

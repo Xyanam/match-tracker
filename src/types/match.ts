@@ -23,7 +23,7 @@ export interface Match {
   status: MatchStatus;
 }
 
-interface MatchesResponse {
+export interface MatchesResponse {
   data: {
     matches: Match[];
   };
