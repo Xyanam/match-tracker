@@ -16,7 +16,7 @@ const MatchItem = ({ match }: Props) => {
           <Icon name="crown" />
           <h1 className="text-base font-semibold">{homeTeam.name}</h1>
         </div>
-        <div className="flex flex-col gap-2 items-center">
+        <div className="flex flex-col gap-1 items-center">
           <span className="text-xl font-semibold">
             {match.homeScore} : {match.awayScore}
           </span>
