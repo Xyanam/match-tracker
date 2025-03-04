@@ -1,7 +1,9 @@
 import { useMatches } from "@/hooks/useMatches";
-import MatchItem from "./MatchItem";
-import { Loader } from "./ui";
+
+import MatchItem from "./Match/MatchItem";
 import EmptyList from "./EmptyList";
+
+import { Loader } from "./ui";
 
 const MatchList = () => {
   const { data, isLoading } = useMatches();
