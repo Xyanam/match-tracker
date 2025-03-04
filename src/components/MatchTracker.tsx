@@ -1,7 +1,8 @@
 import { useMatches } from "@/hooks/useMatches";
+
 import MatchList from "./MatchList";
-import Button from "./ui/Button";
-import Alert from "./ui/Alert";
+
+import { Alert, Button } from "./ui";
 
 const MatchTracker = () => {
   const { refetch, isLoading, error } = useMatches();

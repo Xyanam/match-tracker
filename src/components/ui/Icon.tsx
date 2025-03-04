@@ -1,10 +1,13 @@
-import alert from "../../assets/icons/alert.svg";
-import refresh from "../../assets/icons/refresh.svg";
 import { ImgHTMLAttributes } from "react";
+
+import alert from "@/assets/icons/alert.svg";
+import refresh from "@/assets/icons/refresh.svg";
+import crown from "@/assets/icons/crown.svg";
 
 const icons = {
   alert,
   refresh,
+  crown,
 };
 
 export type IconName = keyof typeof icons;
