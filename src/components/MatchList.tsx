@@ -1,5 +1,5 @@
 import { useMatches } from "@/hooks/useMatches";
-import MatchItem from "./MatchItem";
+import MatchItem from "./Match/MatchItem";
 
 const MatchList = () => {
   const { data } = useMatches();

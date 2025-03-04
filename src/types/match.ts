@@ -8,7 +8,7 @@ export interface Team {
   players: Player[];
   points: number;
   place: number;
-  totalKills: number;
+  total_kills: number;
 }
 
 export type MatchStatus = "Scheduled" | "Ongoing" | "Finished";
