@@ -1,46 +1,39 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/src/assets/fonts/inter-regular.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("/src/assets/fonts/inter-regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/src/assets/fonts/inter-bold.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("/src/assets/fonts/inter-bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
+@theme {
+  --color-destructive: #eb0237;
+  --color-success: #43ad28;
+  --color-warning: #eb6402;
+  --color-background: #06080c;
+  --color-muted: #0f1318;
+  --color-card: #0b0e12;
+}
+
 :root {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--color-background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  --destructive: #EB0237;
-  --success: #43AD28;
-  --warning: #EB6402;
-  --background: #06080C;
-  --muted: #0F1318;
-  --card: #0B0E12;
-}
-
-@theme {
-  --color-destructive: #EB0237;
-  --color-success: #43AD28;
-  --color-warning: #EB6402;
-  --color-background: #06080C;
-  --color-muted: #0F1318;
-  --color-card: #0B0E12;
 }
