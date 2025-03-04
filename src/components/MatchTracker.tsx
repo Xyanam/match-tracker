@@ -17,6 +17,8 @@ const MatchTracker = () => {
             trailingIcon="refresh"
             onClick={() => refetch()}
             disabled={isLoading}
+            animationClass="rotate-360"
+            animationDuration="duration-1000"
           >
             Обновить
           </Button>
